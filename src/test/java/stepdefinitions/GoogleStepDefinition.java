@@ -9,12 +9,12 @@ import utilities.Driver;
 
 public class GoogleStepDefinition {
     @Given("kullanıcı google sayfasındadır")
-    public void kullanıcıGoogleSayfasındadır() {
+    public void kullaniciGoogleSayfasindadir() {
         Driver.getDriver().get("https://www.google.com/");
     }
 
     @When("kullanıcı samsung kelimesini arar")
-    public void kullanıcıSamsungKelimesiniArar() {
+    public void kullaniciSamsungKelimesiniArar() {
         GoogleSearchPage sp = new GoogleSearchPage(Driver.getDriver());
 
         sp.searchFor("samsung");
@@ -22,7 +22,7 @@ public class GoogleStepDefinition {
     }
 
     @Then("kullanıcı sayfada samsung kelimesi gectigini dogrular")
-    public void kullanıcıSayfadaSamsungKelimesiGectiginiDogrular() {
+    public void kullaniciSayfadaSamsungKelimesiGectiginiDogrular() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("samsung"));
 
         Driver.closeDriver();
