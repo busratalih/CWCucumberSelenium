@@ -8,9 +8,7 @@ import pages.GoogleSearchPage;
 import utilities.Driver;
 
 public class ParameterizedStepsDefinitions {
-    @Given("Kullanici google sayfasindadir")
-    public void kullaniciGoogleSayfasindadir() {
-    }
+
 
     @When("Kullanici arama kutusuna {string} yazip arattiginda")
     public void kullaniciAramaKutusunaYazipArattiginda(String key) {

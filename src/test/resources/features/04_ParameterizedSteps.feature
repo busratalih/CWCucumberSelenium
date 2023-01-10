@@ -1,7 +1,7 @@
 Feature: Google Arama Feature
 
   Background:
-    Given Kullanici google sayfasindadir
+    Given kullanıcı google sayfasındadır
 
 
 
